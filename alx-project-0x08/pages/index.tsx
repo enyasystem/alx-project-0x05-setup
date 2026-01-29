@@ -1,9 +1,7 @@
-"use client";
-
-import ImageCard from "@/components/common/ImageCard";
+import ImageCard from "../components/common/ImageCard";
 import { useState } from "react";
 
-export default function Home() {
+const Home: React.FC = () => {
   const [prompt, setPrompt] = useState<string>("");
   const [imageUrl, setImageUrl] = useState<string>("");
 
@@ -39,4 +37,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Home;
