@@ -39,3 +39,5 @@ const handler = async (request: NextApiRequest, response: NextApiResponse) => {
         return response.status(500).json({ error: "Internal Server Error" });
     }
 }
+
+export default handler;
